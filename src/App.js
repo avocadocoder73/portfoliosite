@@ -7,6 +7,7 @@ import Projects from './projects';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import About from './about';
+import { HashRouter } from 'react-router-dom';
 import Contact from './contact';
 const theme = createTheme({
     palette:{
@@ -76,14 +77,14 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    <BrowserRouter basename='/'>
+    <HashRouter basename='/'>
       <Routes>
-        <Route path='https://avocadocoder73.github.io/portfoliosite/' element={<Home></Home>}></Route>
-         <Route path='https://avocadocoder73.github.io/portfoliosite/about' element={<About></About>}></Route>
-          <Route path='https://avocadocoder73.github.io/portfoliosite/projects' element={<Projects></Projects>}></Route>
-           <Route path='https://avocadocoder73.github.io/portfoliosite/contact' element={<Contact></Contact>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
+         <Route path='/about' element={<About></About>}></Route>
+          <Route path='/projects' element={<Projects></Projects>}></Route>
+           <Route path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </ThemeProvider>
   );
 }
