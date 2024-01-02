@@ -44,14 +44,14 @@ const handleclick = () => {
 
                 <Typography sx={{fontFamily:"Satoshi-Bold", fontSize:"1.5rem"}} className={"typography"}>HM</Typography>
                 {small ?  <Box>
-                <Button href='/' variant='contained' color="secondary" sx={{textDecoration:"none"}}>Home</Button>
-                <Button href='/about' variant='contained' color="secondary">About me</Button>        
-                <Button href='/projects' variant='contained' color="secondary">Projects</Button>   
-                <Button href='/contact' variant='contained' color='secondary'>Contact</Button>
+                <Button href='/#/app' variant='contained' color="secondary" sx={{textDecoration:"none"}}>Home</Button>
+                <Button href='/#/app/about' variant='contained' color="secondary">About me</Button>        
+                <Button href='/#/app/projects' variant='contained' color="secondary">Projects</Button>   
+                <Button href='/#/app/contact' variant='contained' color='secondary'>Contact</Button>
                 </Box> : <Box><Button color='secondary' onClick={handleclick}><MenuIcon></MenuIcon></Button><Drawer variant='persistent' anchor='right' open={open}><Button href='/home' variant='contained' color="secondary" sx={{textDecoration:"none"}}>Home</Button>
-                <Button href='/about' variant='contained' color="secondary">About me</Button>        
-                <Button href='/projects' variant='contained' color="secondary">Projects</Button>   
-                <Button href='/contact' variant='contained' color='secondary'>Contact</Button>
+                <Button href='/#/app/about' variant='contained' color="secondary">About me</Button>        
+                <Button href='/#/app/projects' variant='contained' color="secondary">Projects</Button>   
+                <Button href='/#/app/contact' variant='contained' color='secondary'>Contact</Button>
                 <Button color='secondary' onClick={handleclick}>Close Menu</Button></Drawer></Box>}
                
             </Toolbar>    
@@ -64,7 +64,7 @@ const handleclick = () => {
                     <Typography sx={{marginBottom:"30px", color:"#e9e9e9"}} className={"typography"} variant={head}>Haroun <br></br> Mekonnen</Typography>
                     <Typography sx={{marginBottom:"20px", color:"#6CABC1"}} className={"typography"} variant='h5'>Software Engineer</Typography>
                     <Typography sx={{marginBottom:"20px", color:"#e9e9e9"}} className={"typography"}>I'm a full-stack software engineer from McHenry, IL working on building software applications of the future</Typography>
-                    <Button sx={{margin:"0px", marginBottom:"20px"}} variant='contained' color='secondary'>Contact Me</Button>
+                    <Button sx={{margin:"0px", marginBottom:"20px"}} href='/#/app/contact' variant='contained' color='secondary'>Contact Me</Button>
                      <Box>
                     <Link to='https://github.com/avocadocoder73'><Github></Github></Link>
                     <Link className='thesvg' to='https://www.linkedin.com/in/haroun-mekonnen-77b179298/'><Linkedin></Linkedin></Link>
@@ -78,7 +78,7 @@ const handleclick = () => {
                 <Card sx={{width:'100px'}}><Java></Java></Card>
                 <Card sx={{width:'100px'}}><SQL></SQL></Card>
                 <Card sx={{width:'100px'}}><Python></Python></Card>
-                <Card><Button href='/about'sx={{height:"100px"}} color='secondary'>More<ArrowForwardIosIcon color='secondary'></ArrowForwardIosIcon></Button></Card>
+                <Card><Button href='/#/app/about'sx={{height:"100px"}} color='secondary'>More<ArrowForwardIosIcon color='secondary'></ArrowForwardIosIcon></Button></Card>
          </Paper>
          </Box>
    </Container>
