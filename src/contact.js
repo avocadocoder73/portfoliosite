@@ -40,7 +40,7 @@ const handleclick = () => {
 
                 <Typography sx={{fontFamily:"Satoshi-Bold", fontSize:"1.5rem"}} className={"typography"}>HM</Typography>
                 {small ?  <Box>
-                <Button href='/home' variant='contained' color="secondary" sx={{textDecoration:"none"}}>Home</Button>
+                <Button href='/' variant='contained' color="secondary" sx={{textDecoration:"none"}}>Home</Button>
                 <Button href='/about' variant='contained' color="secondary">About me</Button>        
                 <Button href='/projects' variant='contained' color="secondary">Projects</Button>   
                 <Button href='/contact' variant='contained' color='secondary'>Contact</Button>
