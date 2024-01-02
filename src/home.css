@@ -1,0 +1,38 @@
+.typography{
+
+    font-family: "Satoshi-Bold";
+}
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url("../fonts/Satoshi-Bold.woff2") format('woff2'),
+        url('../fonts/Satoshi-Bold.woff') format('woff'),
+        url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+    
+}
+
+.papercss{
+    background-color: #e5e5f7;
+        opacity: 0.8;
+        background-size: 10px 10px;
+        background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 50%);
+}
+
+.thesvg
+{
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url("../fonts/Satoshi-Medium.woff2") format('woff2'),
+        url('../fonts/Satoshi-Medium.woff') format('woff'),
+        url('../fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+
+}
